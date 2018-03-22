@@ -15,7 +15,6 @@
           return value === null || typeof value === 'string' || value instanceof String || typeof value === 'number'
         }
       },
-      // https://github.com/nosir/cleave.js/blob/master/doc/options.md
       options: {
         type: Object,
         default: () => ({})
