@@ -1,5 +1,5 @@
 {
-  "name": "vue-cleave-component",
+  "name": "vue-cleave-comp",
   "version": "1.0.2",
   "description": "Vue.js component for cleave.js",
   "main": "dist/vue-cleave.js",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ankurk91/vue-cleave-component.git"
+    "url": "git+https://github.com/praveenon/vue-cleave-component"
   },
   "keywords": [
     "vue",
@@ -21,7 +21,7 @@
     "date",
     "masking"
   ],
-  "author": "ankurk91",
+  "author": "adelli",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ankurk91/vue-cleave-component/issues"
