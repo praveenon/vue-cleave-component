@@ -53,7 +53,7 @@
     onInput(event) {
       this.$nextTick(() => {
         this.temp = event.target.value;
-      this.$emit('input', value);
+      this.$emit('input', this.temp);
     })
     },
   },
