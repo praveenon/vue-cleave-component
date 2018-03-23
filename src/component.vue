@@ -51,7 +51,7 @@
        */
       onInput(event) {
         this.$nextTick(() => {
-          let value = this.raw ? this.cleave.getRawValue() : event.target.value;
+          let value = event.target.value;
           this.$emit('input', value);
         })
       },
