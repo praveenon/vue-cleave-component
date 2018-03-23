@@ -78,7 +78,7 @@
      * @param newValue
      */
     value(newValue) {
-    this.cleave && this.cleave.setRawValue(temp);
+    this.cleave && this.cleave.setRawValue(this.temp);
     }
   },
   beforeDestroy() {

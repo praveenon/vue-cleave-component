@@ -145,7 +145,7 @@ var external___commonjs___cleave_js___commonjs2___cleave_js___amd___cleave_js___
 
       this.$nextTick(function () {
         _this.temp = event.target.value;
-        _this.$emit('input', value);
+        _this.$emit('input', _this.temp);
       });
     }
   },
@@ -182,7 +182,7 @@ var external___commonjs___cleave_js___commonjs2___cleave_js___amd___cleave_js___
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-72e1e7f7","hasScoped":false,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/component.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-4a33ecea","hasScoped":false,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/component.vue
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{attrs:{"type":_vm.type},on:{"input":_vm.onInput}})}
 var staticRenderFns = []
 
