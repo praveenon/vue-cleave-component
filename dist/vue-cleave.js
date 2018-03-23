@@ -102,7 +102,6 @@ var external___commonjs___cleave_js___commonjs2___cleave_js___amd___cleave_js___
         return value === null || typeof value === 'string' || value instanceof String || typeof value === 'number';
       }
     },
-    // https://github.com/nosir/cleave.js/blob/master/doc/options.md
     options: {
       type: Object,
       default: function _default() {
@@ -122,7 +121,8 @@ var external___commonjs___cleave_js___commonjs2___cleave_js___amd___cleave_js___
   data: function data() {
     return {
       // cleave.js instance
-      cleave: null
+      cleave: null,
+      temp: null
     };
   },
   mounted: function mounted() {
@@ -144,7 +144,7 @@ var external___commonjs___cleave_js___commonjs2___cleave_js___amd___cleave_js___
       var _this = this;
 
       this.$nextTick(function () {
-        var value = _this.raw ? _this.cleave.getRawValue() : event.target.value;
+        _this.temp = event.target.value;
         _this.$emit('input', value);
       });
     }
@@ -160,7 +160,7 @@ var external___commonjs___cleave_js___commonjs2___cleave_js___amd___cleave_js___
       handler: function handler(newOptions) {
         this.cleave.destroy();
         this.cleave = new external___commonjs___cleave_js___commonjs2___cleave_js___amd___cleave_js___root___Cleave___default.a(this.$el, newOptions);
-        this.cleave.setRawValue(this.value);
+        this.cleave.setRawValue(this.temp);
       }
     },
 
@@ -170,7 +170,7 @@ var external___commonjs___cleave_js___commonjs2___cleave_js___amd___cleave_js___
      * @param newValue
      */
     value: function value(newValue) {
-      this.cleave && this.cleave.setRawValue(newValue);
+      this.cleave && this.cleave.setRawValue(temp);
     }
   },
   beforeDestroy: function beforeDestroy() {
@@ -182,7 +182,7 @@ var external___commonjs___cleave_js___commonjs2___cleave_js___amd___cleave_js___
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-ad643094","hasScoped":false,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/component.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-72e1e7f7","hasScoped":false,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/component.vue
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{attrs:{"type":_vm.type},on:{"input":_vm.onInput}})}
 var staticRenderFns = []
 
